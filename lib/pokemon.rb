@@ -24,7 +24,7 @@ class Pokemon
   def self.find(id, db)
     db.execute("ALTER TABLE pokemon ADD hp integer NOT NULL DEFAULT(60)")
     result = db.execute("SELECT * FROM pokemon WHERE id = ?", id)
-    store = {:id => result[0][0], :name => result[0][1], :type => result[0][2], :db => db, :hp => 60}
+    store = {:id => result[0][0], :name => result[0][1], :type => result[0][2], :db => db, :hp => result[0][3]}
     Pokemon.new(store)
   end 
 end
