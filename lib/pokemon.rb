@@ -27,6 +27,8 @@ class Pokemon
     Pokemon.new(store)
   end 
   
-  
+  def alter_hp
+    
+  end 
   
 end
