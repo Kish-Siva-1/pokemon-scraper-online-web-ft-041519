@@ -28,7 +28,8 @@ class Pokemon
   end 
   
   def alter_hp(hp,db)
-    self.hp = 
+    self.hp = hp
+    
     "UPDATE songs SET album = ? WHERE name = ?"
   end 
   
