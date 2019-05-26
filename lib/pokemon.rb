@@ -26,4 +26,7 @@ class Pokemon
     store = {:id => result[0][0], :name => result[0][1], :type => result[0][2], :hp => result[0][3], :db => db}
     Pokemon.new(store)
   end 
+  
+  
+  
 end
